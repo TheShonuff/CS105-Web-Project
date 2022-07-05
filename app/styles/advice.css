@@ -1,0 +1,48 @@
+body {
+  background-color: #1a2a33;
+}
+
+.container {
+  display: flex;
+  height: 500px;
+  width: 800px;
+  background-color: #1f3641;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.Guru {
+  height: 462px;
+  width: 417px;
+}
+
+.Advice p {
+  font-size: 30px;
+  color: white;
+  margin-right: 5px;
+}
+
+.NewAdvice {
+  display: flex;
+  width: 800px;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.Btn {
+  box-shadow: inset 0px -8px 0px #118c87;
+  background-color: #31c3bd;
+  border: none;
+  width: 150px;
+  height: 48px;
+  border-radius: 5px;
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.Btn:hover {
+  background-color: #f2b137;
+  box-shadow: inset 0px -8px 0px #cc8b13;
+}

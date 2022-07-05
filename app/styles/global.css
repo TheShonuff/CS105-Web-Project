@@ -1,0 +1,39 @@
+h1 {
+  font-size: 50px;
+}
+
+@font-face {
+  font-family: "baloo";
+  src: url("/fonts/baloo.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+:root {
+  --font-body: -apple-system, "Segoe UI", Helvetica Neue, Helvetica, Roboto,
+    Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-display: baloo, var(--font-body);
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+h1 {
+  font-family: var(--font-display);
+}
+
+p {
+  font-family: var(--font-display);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: var(--font-display);
+}
+
+button {
+  font-family: var(--font-display);
+}

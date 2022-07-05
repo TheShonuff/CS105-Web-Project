@@ -1,0 +1,52 @@
+body {
+  background-color: #1a2a33;
+}
+
+.Container {
+  height: 200px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.IndexNav {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.IndexList {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  list-style: none;
+}
+
+li {
+  display: flex;
+  background-color: #31c3bd;
+  width: 150px;
+  height: 48px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+  gap: 10px;
+  margin: 0 auto;
+  box-shadow: inset 0px -8px 0px #118c87;
+}
+
+li:hover {
+  background-color: #f2b137;
+  box-shadow: inset 0px -8px 0px #cc8b13;
+  cursor: pointer;
+}
+
+a {
+  align-self: center;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}

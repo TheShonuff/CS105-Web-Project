@@ -1,0 +1,43 @@
+import { useLoaderData } from "@remix-run/react";
+import { json } from "@remix-run/node";
+
+import stylesUrl from "~/styles/weather.css";
+
+export function links() {
+  return [{ rel: "stylesheet", href: stylesUrl }];
+}
+
+export async function loader({ request }) {
+  const RAPID_API_KEY = process.env.X_RAPID_API_KEY;
+  const url = new URL(request.url);
+  const search = new URLSearchParams(url.search);
+  const query = search.get("query");
+  const res = await fetch(
+    `https://weatherapi-com.p.rapidapi.com/current.json?q=${query}`,
+    {
+      method: "GET",
+      params: { q: "Chandler" },
+      headers: {
+        "X-RapidAPI-Key": RAPID_API_KEY,
+        "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
+      },
+    }
+  );
+  console.log(res);
+  return json(await res.json());
+}
+
+export default function Index() {
+  const data = useLoaderData();
+  console.log(data);
+  return (
+    <div>
+      <h1>{data.location.name}</h1>
+      <h3>State: {data.location.region}</h3>
+      <p>
+        Current Temperature: <b>{data.current.temp_f}</b>
+      </p>
+      <p>Current Conditions: {data.current.condition["text"]}</p>
+    </div>
+  );
+}

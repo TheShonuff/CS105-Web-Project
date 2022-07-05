@@ -1,0 +1,14 @@
+body {
+  background-color: #1a2a33;
+}
+
+.container {
+  display: flex;
+  height: 800px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+#TicTacToe {
+  border: none;
+}
