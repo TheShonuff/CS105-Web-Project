@@ -23,7 +23,6 @@ export async function loader({ request }) {
       },
     }
   );
-  console.log(res);
   return json(await res.json());
 }
 
@@ -31,12 +30,13 @@ export default function Index() {
   const data = useLoaderData();
   console.log(data);
   return (
-    <div>
+    <div className="container">
+      <div className="temperature">
+        <p>{data.current.temp_f}</p>
+      </div>
       <h1>{data.location.name}</h1>
       <h3>State: {data.location.region}</h3>
-      <p>
-        Current Temperature: <b>{data.current.temp_f}</b>
-      </p>
+
       <p>Current Conditions: {data.current.condition["text"]}</p>
     </div>
   );
