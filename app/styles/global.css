@@ -37,3 +37,7 @@ a {
 button {
   font-family: var(--font-display);
 }
+
+.submit {
+  font-family: var(--font-display);
+}

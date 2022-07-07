@@ -26,18 +26,31 @@ export async function loader({ request }) {
   return json(await res.json());
 }
 
+export function WeatherPicker() {
+  const data = useLoaderData();
+  if (data.current.condition["text"] === "Overcast") {
+    console.log("The weather is cloudy");
+    return "cloudy";
+  } else {
+    console.log("The weather is clear");
+    return "clear";
+  }
+}
+
 export default function Index() {
   const data = useLoaderData();
   console.log(data);
   return (
-    <div className="container">
-      <div className="temperature">
-        <p>{data.current.temp_f}</p>
-      </div>
-      <h1>{data.location.name}</h1>
-      <h3>State: {data.location.region}</h3>
+    <div className={`weather-container ${WeatherPicker()}`}>
+      <div className="container">
+        <div className="temperature">
+          <p>{data.current.temp_f}</p>
+        </div>
+        <h1>{data.location.name}</h1>
+        <h3>State: {data.location.region}</h3>
 
-      <p>Current Conditions: {data.current.condition["text"]}</p>
+        <p>Current Conditions: {data.current.condition["text"]}</p>
+      </div>
     </div>
   );
 }

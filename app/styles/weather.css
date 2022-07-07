@@ -5,13 +5,45 @@
 .weather-container {
   --bg1: url(/images/cloudy.jpg);
   --bg2: url(/images/clear.jpg);
+  --bg3: url(/images/partly-cloudy.jpg);
+  --bg4: url(/images/overcast.jpg);
+  --bg5: url(/images/rain.jpg);
   background-image: url(/images/clear.jpg);
   background-size: cover;
-  position: relative;
+  position: absolute;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
   overflow: hidden;
+  z-index: -100;
+}
+
+.cloudy {
+  background-image: url(/images/cloudy.jpg);
+}
+
+.clear {
+  background-image: url(/images/clear.jpg);
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+
+#form {
+  margin: 0 auto;
+  display: flex;
+}
+
+#search {
+  border: none;
+  outline: none;
+  background-color: #1a2a33;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 20px;
 }
 
 .submit {
@@ -19,6 +51,9 @@
   box-shadow: inset 0px -8px 0px #118c87;
   border: none;
   border-radius: 5px;
+  height: 50px;
+  width: 85px;
+  font-size: 20px;
 }
 
 .sumbit:hover {
@@ -34,6 +69,7 @@
   flex-direction: column;
   margin: 0 auto;
   background-color: #1f3641;
+  margin-top: 75px;
 }
 
 .temperature p {
@@ -41,10 +77,4 @@
   text-align: center;
   border: solid red;
   margin-top: 0;
-}
-
-#search {
-  border: none;
-  outline: none;
-  background-color: #1a2a33;
 }
