@@ -26,30 +26,54 @@ export async function loader({ request }) {
   return json(await res.json());
 }
 
-export function WeatherPicker() {
-  const data = useLoaderData();
-  if (data.current.condition["text"] === "Overcast") {
-    console.log("The weather is cloudy");
-    return "cloudy";
-  } else {
-    console.log("The weather is clear");
-    return "clear";
-  }
-}
-
 export default function Index() {
   const data = useLoaderData();
   console.log(data);
   return (
-    <div className={`weather-container ${WeatherPicker()}`}>
+    <div className="weather-container">
       <div className="container">
-        <div className="temperature">
-          <p>{data.current.temp_f}</p>
+        <div className="intro">
+          <p>
+            Current Weather For: <br />
+          </p>
+          <div className="weather-header location">
+            <h2>
+              <span className="City">{data.location.name}</span>&nbsp;
+              <span className="State">{data.location.region}</span>
+            </h2>
+            <img
+              className="weather-icon"
+              src={`${data.current.condition["icon"]}`}
+            />
+          </div>
         </div>
-        <h1>{data.location.name}</h1>
-        <h3>State: {data.location.region}</h3>
-
-        <p>Current Conditions: {data.current.condition["text"]}</p>
+        <div className="temperature">
+          <p>
+            {data.current.temp_f}
+            <span>&#176;</span>f
+          </p>
+        </div>
+        <div className="additional-weather-info">
+          <p>
+            Wind Speed:{" "}
+            <span className="data">{data.current.wind_mph} mph</span>
+          </p>
+          <p>
+            Gust Speed:{" "}
+            <span className="data">{data.current.gust_mph} mph</span>
+          </p>
+          <p>
+            Wind Direction:{" "}
+            <span className="data">{data.current.wind_dir}</span>
+          </p>
+          <p>
+            Humidity: <span className="data">{data.current.humidity}</span>
+          </p>
+          <p>
+            Feels Like:{" "}
+            <span className="data">{data.current.feelslike_f}&#176;f</span>
+          </p>
+        </div>
       </div>
     </div>
   );
