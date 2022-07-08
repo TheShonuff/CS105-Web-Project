@@ -23,7 +23,7 @@ export default function Advice() {
       <div className="container">
         <img className="Guru" src="/images/Guru-solo.png" />
         <div className="Advice">
-          <p>{data.slip.advice}</p>
+          <p>"{data.slip.advice}"</p>
         </div>
       </div>
       <div className="NewAdvice">

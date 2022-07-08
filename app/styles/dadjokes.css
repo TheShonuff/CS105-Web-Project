@@ -1,0 +1,74 @@
+body {
+  background-color: #1a2a33;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.joke-container {
+  height: auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #1f3641;
+  border-radius: 15px;
+  padding-top: 10px;
+  box-shadow: inset 0px -8px 0px #10212a;
+}
+
+.dadjoke-img {
+  width: 283px;
+  height: 360px;
+}
+
+.setup {
+  width: 560px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 26px;
+  color: #31c3bd;
+  margin-top: 0;
+}
+
+.setup p {
+  padding: 0;
+  margin: 0;
+}
+
+.punch {
+  width: 560px;
+  height: auto;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #f2b137;
+}
+
+#submit {
+  background-color: #31c3bd;
+  box-shadow: inset 0px -8px 0px #118c87;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 185px;
+  font-size: 20px;
+  font-family: var(--font-display);
+}
+
+#submit:hover {
+  background-color: #f2b137;
+  box-shadow: inset 0px -8px 0px #cc8b13;
+  cursor: pointer;
+}
+
+.form {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
