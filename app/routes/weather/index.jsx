@@ -11,7 +11,8 @@ export async function loader({ request }) {
   const RAPID_API_KEY = process.env.X_RAPID_API_KEY;
   const url = new URL(request.url);
   const search = new URLSearchParams(url.search);
-  const query = search.get("query");
+  let query = search.get("query");
+  query = query === null ? "Chandler" : search.get("query");
   const res = await fetch(
     `https://weatherapi-com.p.rapidapi.com/current.json?q=${query}`,
     {
@@ -74,6 +75,10 @@ export default function Index() {
             <span className="data">{data.current.feelslike_f}&#176;f</span>
           </p>
         </div>
+        <p className="credit">
+          weather provided by:{" "}
+          <a href="https://www.weatherapi.com/">WeatherAPI.com</a>
+        </p>
       </div>
     </div>
   );

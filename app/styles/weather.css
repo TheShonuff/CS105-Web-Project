@@ -15,12 +15,6 @@ body {
   flex-direction: column;
 }
 
-.intro p {
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 5px;
-}
-
 .weather-header {
   display: flex;
   flex-direction: row;
@@ -56,15 +50,18 @@ body {
 #search {
   border: none;
   outline: #31c3bd;
-  background-color: #1a2a33;
+  background-color: #1f3641;
   height: 50px;
   width: 200px;
   border-radius: 5px;
   font-size: 20px;
   font-family: var(--font-display);
+  color: white;
+  padding-left: 10px;
 }
 
-#search:focus {
+#search.search-query {
+  color: white;
   background-color: #1f3641;
 }
 
@@ -93,7 +90,7 @@ input:-webkit-autofill:active {
 
 .container {
   width: 400px;
-  height: 400px;
+  height: 380px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -101,6 +98,9 @@ input:-webkit-autofill:active {
   margin-top: 75px;
   border-radius: 10px;
   box-shadow: inset 0px -8px 0px #10212a;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .temperature p {
@@ -122,5 +122,15 @@ input:-webkit-autofill:active {
 
 .data {
   font-size: 22px;
+  color: #f2b137;
+}
+
+.credit {
+  color: lightgray;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.credit a {
   color: #f2b137;
 }
