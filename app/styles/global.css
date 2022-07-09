@@ -21,6 +21,7 @@ body {
 }
 
 h1 {
+  font-size: 26px;
   font-family: var(--font-display);
 }
 
@@ -30,8 +31,12 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: var(--font-display);
+}
+
+a:hover {
+  color: #f2b137;
 }
 
 button {

@@ -11,8 +11,6 @@ export default function Game() {
       <iframe
         id="TicTacToe"
         title="Tic Tac Toe"
-        width="600"
-        height="800"
         src="https://silly-biscochitos-d897d1.netlify.app/"
       />
     </div>
