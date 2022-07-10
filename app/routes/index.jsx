@@ -10,22 +10,22 @@ export default function Index() {
       <h1>CIS105 Remix WebPage</h1>
       <div className="IndexNav">
         <ul className="IndexList">
-          <li>
+          <li className="link-list">
             <a href="/dadjokes" rel="noreferrer">
               Dad Jokes
             </a>
           </li>
-          <li>
+          <li className="link-list">
             <a href="/advice" rel="noreferrer">
               Get Advice
             </a>
           </li>
-          <li>
+          <li className="link-list">
             <a href="/game" rel="noreferrer">
               Game
             </a>
           </li>
-          <li>
+          <li className="link-list">
             <a href="/weather" rel="noreferrer">
               Weather
             </a>

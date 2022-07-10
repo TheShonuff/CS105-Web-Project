@@ -4,9 +4,10 @@ body {
 
 .container {
   display: flex;
-  height: 800px;
-  width: 600px;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 #TicTacToe {
@@ -16,4 +17,13 @@ body {
 iframe {
   width: 100vw;
   height: 100vh;
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow: hidden;
+  }
 }

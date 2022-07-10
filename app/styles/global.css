@@ -2,6 +2,13 @@ h1 {
   font-size: 50px;
 }
 
+ol,
+ul {
+  list-style: none !important;
+
+  list-style-type: none !important;
+}
+
 @font-face {
   font-family: "baloo";
   src: url("/fonts/baloo.woff") format("woff");
@@ -45,4 +52,25 @@ button {
 
 .submit {
   font-family: var(--font-display);
+}
+
+.link {
+  color: white;
+}
+
+#toolbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.toolbar-list {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+}
+
+.link:hover {
+  color: #f2b137;
 }

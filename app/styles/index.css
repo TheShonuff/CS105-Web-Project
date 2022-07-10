@@ -22,7 +22,7 @@ body {
   list-style: none;
 }
 
-li {
+.link-list {
   background-color: #31c3bd;
   width: 150px;
   height: 44px;
@@ -35,7 +35,7 @@ li {
   box-shadow: inset 0px -8px 0px #118c87;
 }
 
-li a {
+.link-list a {
   width: 100%;
   height: 100%;
   font-size: 22px;
@@ -43,11 +43,11 @@ li a {
   color: black;
 }
 
-li a:hover {
+.link-list a:hover {
   color: black;
 }
 
-li:hover {
+.link-list:hover {
   background-color: #f2b137;
   box-shadow: inset 0px -8px 0px #cc8b13;
   cursor: pointer;
