@@ -13,10 +13,11 @@ export default function Index() {
         </h1>
         <div className="intro">
           <p>
-            Hello and welcome to my <a href="https://remix.run/">Remix</a> test
-            website. Remix is a full stack web framework that allows you to
-            focus on the user interface and work back through web standards to
-            deliver a fast and slick user experience.
+            Hello my name is Joe Irvine and welcome to my &nbsp;
+            <a href="https://remix.run/">Remix</a>&nbsp; website. Remix is a
+            full stack web framework that allows you to focus on the user
+            interface and work back through web standards to deliver a fast and
+            slick user experience.
           </p>
 
           <p>
