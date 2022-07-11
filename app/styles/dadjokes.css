@@ -1,10 +1,15 @@
 body {
   background-color: #1a2a33;
 }
+
+.content {
+  margin-top: 50px;
+}
+
 .container {
   display: flex;
   margin: 0 auto;
-  width: 100px;
+  width: 1200px;
 }
 
 .joke-container {
@@ -71,4 +76,44 @@ body {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  .dadjoke-img {
+    display: none;
+    visibility: collapse;
+  }
+
+  .content-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .joke-container {
+    width: 400px;
+    height: auto;
+  }
+
+  .joke-results {
+    width: 400px;
+    height: auto;
+  }
+
+  .setup {
+    width: auto;
+    height: auto;
+    font-size: 24px;
+  }
+  .form {
+    width: auto;
+  }
+
+  .punch {
+    width: auto;
+    height: auto;
+    font-size: 20px;
+  }
 }

@@ -32,7 +32,7 @@ export default function Index() {
   console.log(data);
   return (
     <div className="weather-container">
-      <div className="container">
+      <div className="content">
         <div className="intro">
           <p>
             Current Weather For: <br />

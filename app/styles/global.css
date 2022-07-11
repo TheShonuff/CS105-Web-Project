@@ -5,8 +5,16 @@ h1 {
 ol,
 ul {
   list-style: none !important;
-
   list-style-type: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -21,10 +29,6 @@ ul {
   --font-body: -apple-system, "Segoe UI", Helvetica Neue, Helvetica, Roboto,
     Arial, sans-serif, system-ui, "Apple Color Emoji", "Segoe UI Emoji";
   --font-display: baloo, var(--font-body);
-}
-
-body {
-  font-family: var(--font-body);
 }
 
 h1 {
@@ -58,6 +62,13 @@ button {
   color: white;
 }
 
+#toolbar {
+  height: 25px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
 #toolbar ul {
   display: flex;
   flex-direction: row;
@@ -73,4 +84,17 @@ button {
 
 .link:hover {
   color: #f2b137;
+}
+
+#footer {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  border: solid red;
+}
+
+#footer p {
+  padding: 0;
+  margin: 0;
 }

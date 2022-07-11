@@ -2,6 +2,10 @@ body {
   background-color: #1a2a33;
 }
 
+.content {
+  margin-top: 50px;
+}
+
 .container {
   display: flex;
   height: 500px;

@@ -6,7 +6,17 @@ export function links() {
   return [{ rel: "stylesheet", href: stylesUrl }];
 }
 
-export default function Toolbar() {
+export function Footer() {
+  return (
+    <>
+      <div id="footer">
+        <p>I'm a footer</p>
+      </div>
+    </>
+  );
+}
+
+export function Toolbar() {
   return (
     <>
       <div id="toolbar">

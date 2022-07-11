@@ -7,10 +7,11 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import Toolbar from "./shared/components/Toolbar";
-import globalStylesUrl from "./styles/global.css"
-import globalMediumStylesUrl from "./styles/global-medium.css"
-import globalLargeStylesUrl from "./styles/global-large.css"
+import { Toolbar } from "./shared/components/Toolbar";
+import { Footer } from "./shared/components/Toolbar";
+import globalStylesUrl from "./styles/global.css";
+import globalMediumStylesUrl from "./styles/global-medium.css";
+import globalLargeStylesUrl from "./styles/global-large.css";
 
 export function links() {
   return [
@@ -49,6 +50,7 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
+        <Footer />
         <LiveReload />
       </body>
     </html>

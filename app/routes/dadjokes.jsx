@@ -24,26 +24,28 @@ export default function Dadjokes() {
   const data = useLoaderData();
   console.log(data);
   return (
-    <div className="container">
-      <img className="dadjoke-img" src="images/banana-man.png" />
-      <div className="content-container">
-        <Form className="form" method="GET">
-          <input id="submit" type="submit" value="Get Dad Joke" />
-        </Form>
-        <div className="joke-container">
-          {/* <p>{data.body[0].setup}</p>
+    <div className="content">
+      <div className="container">
+        <img className="dadjoke-img" src="images/banana-man.png" />
+        <div className="content-container">
+          <Form className="form" method="GET">
+            <input id="submit" type="submit" value="Get Dad Joke" />
+          </Form>
+          <div className="joke-container">
+            {/* <p>{data.body[0].setup}</p>
         <p>{data.body[0].punchline}</p> */}
-          <div className="joke-results">
-            <div className="setup">
-              <p>{data.body[0].setup}</p>
-            </div>
-            <div className="punch">
-              <p>{data.body[0].punchline}</p>
+            <div className="joke-results">
+              <div className="setup">
+                <p>{data.body[0].setup}</p>
+              </div>
+              <div className="punch">
+                <p>{data.body[0].punchline}</p>
+              </div>
             </div>
           </div>
         </div>
+        <img className="dadjoke-img" src="images/banana-man-flipped.png" />
       </div>
-      <img className="dadjoke-img" src="images/banana-man-flipped.png" />
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function Advice() {
   const data = useLoaderData();
   console.log(data);
   return (
-    <div>
+    <div className="content">
       <div className="container">
         <img className="Guru" src="/images/Guru-solo.png" />
         <div className="Advice">
