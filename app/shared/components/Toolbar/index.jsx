@@ -10,7 +10,17 @@ export function Footer() {
   return (
     <>
       <div id="footer">
-        <p>I'm a footer</p>
+        <p>Created by: Joe Irvine</p>
+        <p>
+          <a href="https://www.joeirvine.com/">Blog</a>
+        </p>
+        <p>
+          <a href="https://github.com/TheShonuff">Github</a>
+        </p>
+        <p>
+          {" "}
+          <a href="https://twitter.com/TheDevShonuff">Twitter</a>
+        </p>
       </div>
     </>
   );

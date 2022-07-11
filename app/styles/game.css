@@ -24,6 +24,6 @@ iframe {
 
 @media screen and (max-width: 500px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }

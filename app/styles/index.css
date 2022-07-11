@@ -1,11 +1,46 @@
 body {
   background-color: #1a2a33;
+  height: auto;
+}
+
+.content {
+  margin-top: 75px;
 }
 
 .Container {
-  height: 200px;
+  height: auto;
   width: 800px;
   margin: 0 auto;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.intro {
+  border: solid #31c3bd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #10212a;
+}
+
+.intro p {
+  color: lightgray;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .IndexNav {
@@ -56,6 +91,7 @@ body {
 h1 {
   text-align: center;
   color: white;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 900px) {
@@ -81,5 +117,6 @@ h1 {
 
   .Container {
     width: 100vw;
+    height: auto;
   }
 }
