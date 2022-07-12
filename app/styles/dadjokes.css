@@ -6,6 +6,17 @@ body {
   margin-top: 50px;
 }
 
+.image {
+  display: flex;
+  flex-direction: column;
+}
+
+.image p {
+  margin: 0 auto;
+  padding: 0;
+  color: lightgray;
+}
+
 .container {
   display: flex;
   margin: 0 auto;
@@ -79,6 +90,11 @@ body {
 }
 @media screen and (max-width: 500px) {
   .dadjoke-img {
+    display: none;
+    visibility: collapse;
+  }
+
+  .image {
     display: none;
     visibility: collapse;
   }

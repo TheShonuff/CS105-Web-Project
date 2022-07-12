@@ -26,7 +26,14 @@ export default function Dadjokes() {
   return (
     <div className="content">
       <div className="container">
-        <img className="dadjoke-img" src="images/banana-man.png" />
+        <div className="image">
+          <img className="dadjoke-img" src="images/banana-man.png" />
+          <p>
+            "Banana" <a href="https://www.pngegg.com/en/png-oovtm">-pngEgg</a>{" "}
+            license-{" "}
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC 4.0</a>
+          </p>
+        </div>
         <div className="content-container">
           <Form className="form" method="GET">
             <input id="submit" type="submit" value="Get Dad Joke" />
@@ -44,7 +51,14 @@ export default function Dadjokes() {
             </div>
           </div>
         </div>
-        <img className="dadjoke-img" src="images/banana-man-flipped.png" />
+        <div className="image">
+          <img className="dadjoke-img" src="images/banana-man-flipped.png" />
+          <p>
+            "Banana" <a href="https://www.pngegg.com/en/png-oovtm">-pngEgg</a>{" "}
+            license-{" "}
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC 4.0</a>
+          </p>
+        </div>
       </div>
     </div>
   );

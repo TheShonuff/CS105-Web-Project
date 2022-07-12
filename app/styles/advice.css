@@ -34,6 +34,17 @@ body {
   justify-content: center;
 }
 
+.image {
+  display: flex;
+  flex-direction: column;
+}
+
+.image p {
+  margin: 0 auto;
+  padding: 0;
+  color: lightgray;
+}
+
 .Btn {
   box-shadow: inset 0px -8px 0px #118c87;
   background-color: #31c3bd;
@@ -42,7 +53,7 @@ body {
   height: 48px;
   border-radius: 5px;
   font-size: 20px;
-
+  margin-top: 20px;
   cursor: pointer;
 }
 

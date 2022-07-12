@@ -21,7 +21,23 @@ export default function Advice() {
   return (
     <div className="content">
       <div className="container">
-        <img className="Guru" src="/images/Guru-solo.png" />
+        <div className="image">
+          <img
+            className="Guru"
+            src="/images/Guru-solo.png"
+            alt="Guru-Solo -Solo png@pngkey.com"
+          />
+          <p>
+            "Guru-Solo"{" "}
+            <a href="https://www.pngkey.com/maxpic/u2q8t4w7y3q8i1u2/">
+              -pngKey
+            </a>{" "}
+            license-{" "}
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+              CC BY-NC 4.0
+            </a>
+          </p>
+        </div>
         <div className="Advice">
           <p>"{data.slip.advice}"</p>
         </div>
