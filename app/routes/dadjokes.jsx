@@ -22,7 +22,6 @@ export async function loader() {
 
 export default function Dadjokes() {
   const data = useLoaderData();
-  console.log(data);
   return (
     <div className="content">
       <div className="container">
