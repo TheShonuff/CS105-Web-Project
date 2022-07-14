@@ -29,7 +29,6 @@ export async function loader({ request }) {
 
 export default function Index() {
   const data = useLoaderData();
-  console.log(data);
   return (
     <div className="weather-container">
       <div className="content">
